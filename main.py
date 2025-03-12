@@ -21,20 +21,20 @@ if mydb.is_connected():
     print(f"Connected to MySQL version {db_info}")
     
     cursor = mydb.cursor()
-    # cursor.execute("CREATE TABLE animal (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name varchar(255), breed varchar(100), id_cage_type INT, birthdate INT, country varchar(100) );")
-    # cursor.execute("DESCRIBE animal;")
+    # cursor.execute("CREATE TABLE category (id INT PRIMARY KEY AUTO_INCREMENT,name VARCHAR(255));")
+    # cursor.execute("CREATE TABLE product (id INT PRIMARY KEY AUTO_INCREMENT,name VARCHAR(255),description TEXT,price INT,quantity INT,id_category INT,FOREIGN KEY (id_category) REFERENCES category(id));")
+   
+    # cursor.execute("INSERT INTO category (name) VALUES ('Électronique'),('Vêtements'),('Alimentation'),('Maison'),('Sport');")
+    # cursor.execute("INSERT INTO category (name) VALUES ('Électronique'),('Vêtements'),('Alimentation'),('Maison'),('Sport');")
     # results= cursor.fetchall()
     # print(results)
     
-    # cursor.execute("CREATE TABLE cage (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, surface INT, max_capacity INT);")
-    # cursor.execute("DESCRIBE cage;")
-    # results= cursor.fetchall()
-    # print(results)
-    
-    cursor.execute("SELECT * from animal;")
+    cursor.execute("SELECT * from category;")
     results= cursor.fetchall()
     print(results)
     
     
     cursor.close()
     mydb.close()
+    
+    
