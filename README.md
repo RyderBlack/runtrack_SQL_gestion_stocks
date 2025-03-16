@@ -19,10 +19,10 @@ MCD diagram for the Store database (ERD)
 *   **Remove Products:** Delete existing products from the database.
 *   **Update Products:** Modify the details of existing products (e.g., update quantity, price, description).
 *   **Add Categories:** Create new product categories.
-*   **Remove Categories:** Delete existing categories (consider how this impacts products in that category – do you cascade delete, set to a default category, or prevent deletion if products exist?).
+*   **Remove Categories:** Delete existing categories.
 *   **View Products:** Display a list of all products, optionally filtered by category.
 *   **View Categories:**  Display a list of all categories.
-*   **Search Products (Optional):** If you have a search feature, mention it here.
+*   **Search Products:** search the database using the searchbar.
 * **Database Connection Management:** Handles the connection to the MySQL database.
 
 ## Future Improvements 
