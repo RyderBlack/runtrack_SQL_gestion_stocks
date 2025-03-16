@@ -7,7 +7,10 @@ This Python project provides a simple stock management system ("gestion des stoc
 
 ## Screenshot
 
+Main Screen
 ![Application Screenshot](./gestion_stock_01.png) 
+
+MCD diagram for the Store database (ERD)
 ![ERD diagram for the Database](./gestion_stock_02.png) 
 
 ## Features
